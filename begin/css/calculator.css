@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+:root {
+--black: #000000;
+--white: #ffffff;
+--light--grey: #d8d9db;
+--buttons--hover: #ebebeb;
+--button--active: #bbbcbe;
+--function--buttons: #df974c;
+--function--buttons--hover: #dfb07e;
+--function--button--active: #dd8d37;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screen {
+    background-color: var(--black);
+    height: 85px;
+    text-align: right;
+    color: var(--white);
+    font-size: 3.5em;
+    padding: 10px 10px 0 0;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 85px);
+}
+
+.calc-buttons button {
+    border: 1.5px solid black;
+    width: inherit;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+}
+
+.c {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.funcbtn {
+    color: var(--white);
+    background-color: var(--function--buttons);
+}
+
+.funcbtn:hover {
+    background-color: var(--function--buttons--hover);
+}
+
+.funcbtn:active {
+    background-color: var(--function--button--active);
+}
+
+.btn {
+    background-color: var(--light--grey);
+}
+
+.btn:hover {
+    background-color: var(--buttons--hover);
+}
+
+.btn:active {
+    background-color: var(--button--active);
+}
