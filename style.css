@@ -34,7 +34,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.screen {
+#screen {
     background-color: var(--black);
     height: 85px;
     text-align: right;
