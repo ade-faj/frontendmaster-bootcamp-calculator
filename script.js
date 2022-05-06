@@ -10,7 +10,26 @@ const calcButtons = document.querySelector('.calc-buttons');
 
 
 function buttonClick (value) {
-    
+    if (isNaN(value)) { //used  to check if what is pressed is a symbol or number
+        handleSymbol(value);
+    } else {
+        handleNumber(value);
+    }
+}
+
+
+function handleSymbol(symbol) {
+
+}
+
+
+function handleNumber(numberString) {
+    if (buffer === '0') {
+        buffer = numberString;
+    } else {
+        buffer += numberString;
+    }
+    screen.innerText = buffer;
 }
 
 function init () {
